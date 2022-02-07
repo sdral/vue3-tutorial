@@ -1,29 +1,12 @@
 <template>
+
+
   <div>
+    <router-view></router-view>
+
     <br />
-
-    Add 1 :<button @click="increase">+1</button> <br />
-    Minus 1 :<button @click="decrease">-1</button> <br />
-    <br />
-    Add 5 :<button @click="increase">+5</button> <br />
-    Minus 5 :<button @click="decrease">-5</button> <br />
-
-    <h2>{{ counter }}</h2>
-
-    Name: <input type="text" v-model="name" /> <br />
-    Address: <input type="text" v-model="address" /> <br />
-    Tel : <input type="text" v-model="tel" /> <br />
-    email : <input type="text" v-model="email" /> <br />
-
-    <img v-bind:src="filename" /> <br />
-    <img :src="image1" /> <br />
-    <img :src="image2" /> <br />
-
-    <hr />
-    Name: {{ name }} <br />
-    Addr: {{ address }}<br />
-    Tel : {{ tel }} <br />
-    Email: {{ email }} <br />
+<div class="class1">this is app vue</div>
+  
   </div>
 </template>
 
@@ -43,17 +26,15 @@ export default {
   },
   components: {},
   methods: {
-    increase() {
-      this.counter = this.counter + 1;
-    },
-    decrease() {
-      this.counter = this.counter - 1;
-    },
+    
   },
 };
 </script>
 
 <style>
+.class1{
+  background: rgb(255, 0, 0);
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
